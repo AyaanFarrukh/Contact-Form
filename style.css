@@ -236,6 +236,9 @@ textarea {
     body {
         background-attachment: fixed;
     }
+    .message-box i {
+        top: 8%;
+    }
     .contact-box {
         width: 95%;
         margin: 20px 0;
