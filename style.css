@@ -1,0 +1,259 @@
+body,html {
+    margin: 0px;
+    box-sizing: border-box;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+body {
+    background: url("https://plus.unsplash.com/premium_photo-1670271544153-dd9933f0f119?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Ymx1ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-box {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,1);
+    display: flex;
+    flex-direction: row;
+}
+.info-area,.contact-area {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.pic {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    z-index: 1;
+    background: url("https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg?mbid=social_retweet");
+    filter: blur(1px);
+    opacity: 0.8;
+}
+.info-area {
+    padding: 30px;
+    position: relative;
+    background-color: white;
+    font-family: "Inter";
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.info-area div {
+    z-index: 999999;
+}
+.contact-area {
+    background-color: blue;
+}
+.top-box {
+    padding: 5px;
+    margin: 0;
+    line-height: 1;
+}
+.top-head {
+    font-weight: 600;
+    font-size: 25px;
+}
+.top-info {
+    padding: 5px;
+    line-height: 1;
+}
+.contact-info-box {
+    margin-top: 0px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.info-card {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+.icon-area {
+    width: 15%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.info-area i {
+    font-size: 30px;
+    margin-top: 15px;
+}
+.card-info-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.card-info-area div {
+    height: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.card-info-area span {
+    margin: 10px;
+}
+.contact-area {
+    padding: 20px;
+}
+.contact-area i {
+    color: white;
+}
+.input-feilds-area {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 10px 0px;
+}
+.input-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+.input-wrapper i {
+    position: absolute;
+    left: 4%;
+    font-size: 18px;
+}
+.input-feilds-area input,textarea {
+    width: 90%;
+    font-size: 18px;
+    padding-left: 50px;
+    border: 3px solid white;
+    color: black;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 600;
+    font-family: "Inter";
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
+.input-feilds-area input:focus, textarea:focus {
+    border: 3px solid black;
+    box-shadow: 0px 4px 8px rgb(43, 43, 43);
+}
+.input-feilds-area input::placeholder , textarea::placeholder {
+    color: rgb(255, 255, 255);
+    font-family: "Inter";
+}
+.full-name-input,.full-email-input,.full-subject-input{
+    height: 45px;
+}
+.full-message-input {
+    height: 150px;
+}
+textarea {
+    height: 200px;
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+.message-box {
+    margin-bottom: 10px;
+}
+.message-box i {
+    top: 20px;
+}
+.contact-head {
+    margin-bottom: 15px;
+    color: white;
+}
+.contact-head span {
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1;
+}
+.submit-btn-box {
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+.submit-btn-box button {
+    width: 300px;
+    font-family: "Inter";
+    font-weight: 600;
+    border: 2px solid white;
+    background-color: white;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: scale 0.2s ease-in-out,background-color 0.2s ease-in-out,color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+.submit-btn-box button:hover {
+    scale: 1.05;
+    color: black;
+    border: 1px solid rgb(204, 195, 195);
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+
+}
+.custom-title,.custom-text {
+    font-family: "Inter";
+}
+.swal2-container {
+    z-index: 9999999 !important;
+}
+.popup {
+    z-index: 99999999999 !important;
+}
+@media screen and (max-width: 875px) {
+    .contact-box {
+        flex-direction: column;
+    }
+    .info-area,.contact-area {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    main {
+        width: 90%;
+        height: auto;
+    }
+    body {
+        background-attachment: fixed;
+    }
+    .contact-box {
+        width: 95%;
+        margin: 20px 0;
+        background-color: orange;
+    }
+    .info-area,.contact-area {
+        height: fit-content;
+        width: 100%;
+    }
+    .card-info-area div {
+        height: fit-content;
+        line-height: 1;
+    }
+    .input-feilds-area input, textarea {
+        width: 95%;
+        font-size: 16px;
+        padding-left: 40px; /* smaller icon spacing */
+      }
+}
